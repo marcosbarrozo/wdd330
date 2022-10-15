@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+#todo-container{
+    min-width: 300px;
+}
+
+#todo-container .ToDo-element, #todo-container .Todo-footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#todo-container .ToDo-element{
+    border: 1px solid black;
+    padding: .5rem .3rem;
+}
+.checkbox{
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
+.task{
+    margin-left: 1rem;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.delete{
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+#todo-container h1{
+    text-align: center;
+    margin: 1rem 0;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+#todo-container .Todo-footer{
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+#add-task{
+    margin: 1rem;
+}
+
+#task{
+    font-size: 1.2rem;
+    padding: .5rem;
+    outline: none;
+}
+
+#add-task-btn{
+    padding: .5em;
+    font-size:  1.2rem;
+    cursor: pointer;
+    
+}
