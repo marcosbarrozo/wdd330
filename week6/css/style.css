@@ -10,6 +10,14 @@ body{
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    background: linear-gradient(18deg,#30DEE6,#5C44B3);
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 .5rem .2rem rgba(0,0,0,.5);
 }
 #todo-container{
     min-width: 300px;
@@ -32,14 +40,25 @@ body{
     cursor: pointer;
     text-align: center;
     line-height: 25px;
+    font-size: 1.5rem;
 }
 .task{
     margin-left: 1rem;
     margin-right: auto;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .line-through{
-    text-decoration: line-through;
+    position: relative;
+    width: 70%;
+}
+.line-through::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    height: 2px;
+    background-color: #757575;
+    width: 100%;
 }
 .delete{
     font-size: 1.5rem;
@@ -65,15 +84,17 @@ body{
 }
 
 #task{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: .5rem;
     outline: none;
 }
 
 #add-task-btn{
-    padding: .5em;
-    font-size:  1.2rem;
+    padding: .5rem;
+    font-size:  1.3rem;
     cursor: pointer;
+    border-radius: .2rem;
+    font-weight: bold;
     
 }
 
@@ -84,4 +105,6 @@ body{
 
 .active{
     border: 1px solid black;
+    border-radius: .2rem;
+    background-color: rgba(0,0,0,.3)
 }
