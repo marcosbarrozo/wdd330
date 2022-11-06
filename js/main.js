@@ -15,6 +15,10 @@ const links = [
   {
     label: "Week6 Final Todo",
     url: "week6/index.html"
+  },
+  {
+    label: "Week8 Star Wars People API",
+    url: "week8/index.html"
   }
   
 ]
