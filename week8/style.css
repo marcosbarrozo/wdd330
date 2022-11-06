@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #120C0E;
+    color: #fff;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+
+.cards{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    flex: 1 1 14em; 
+    background-color: #F1F3F2;
+    color:#120C0E;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    color: #B54418;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#prev, #next{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: .5rem .8rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#prev:hover, #next:hover{
+    background-color: rgba(255, 255, 255, 0.607);
+    transform: scale(1.05);
+    color:#B54418;
+}
+#prev{
+    cursor: pointer;
+}
+.controls-btn{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
