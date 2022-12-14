@@ -19,6 +19,10 @@ const links = [
   {
     label: "Week8 Star Wars People API",
     url: "week8/index.html"
+  },
+   {
+    label: "Final Project Login - Blog",
+    url: "week14/index.html"
   }
   
 ]
