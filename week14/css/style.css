@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+#login-container, #sign_up-container, #dashboard-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#000f4d,#2691d9);
+}
+
+#login, #sign_up{
+    padding: 2rem ;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,.5);
+    width: 400px;
+    background-color: #fff;
+}
+
+#login h2, #sign_up h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+#login form , #sign_up form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+
+}
+.input-container{
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+.input-container input{
+    width: 100%;
+    padding: .5rem .8rem;
+    outline: none;   
+}
+.input-container label{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+/*
+.input-container:hover label{
+    top: -1.2rem;
+    font-size: .9rem;
+}*/ 
+.input-container input:valid ~ label, .input-container input:focus ~ label, .input-container:hover label{
+    top: -1.4rem;
+    font-size: .9rem;
+}
+.btn{
+    padding: .7rem 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+    background-color: #2691d9;
+    color: white;
+    border-radius: .3rem;
+
+}
+
+#login-p{
+    text-align: center;
+}
+#sign-up{
+    text-decoration: none;
+    color: #2691d9;
+}
+
+.error{
+    position: absolute;
+    top: -80px;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: .6rem ;
+}
+
+.active{
+    top: 10px;
+
+}
+
+/*DashBoard*/
+
+#dashboard{
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 100vh;
+}
+
+#dashboard h1{
+    margin: 2rem 0;
+    text-align: center;
+}
+#create_form textarea{
+    width: 100%;
+    padding: .5rem .8rem;
+}
+
+#create_form label{
+    top: -1.4rem;
+    font-size: .9rem;
+}
+#create_btn{
+    display: block;
+    margin: 1rem auto;
+}
+
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.buttons button,.buttons a{
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/*Blog*/
+
+#blog-container{
+
+height: 100vh;
+background: linear-gradient(120deg,#000f4d,#2691d9);
+}
+
+#blog-section{
+    background-color: white;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 100vh;
+}
+#blog-section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: rgb(150, 153, 227);
+    color: white;
+}
+#blog-section ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+#blog-section ul li a:hover{
+    text-decoration: underline;
+}
+
+#posts{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
+#blog-section h1{
+    text-align: center;
+    margin-top: 1rem;
+}
+#posts article p{
+    margin-top: 1rem;
+}
