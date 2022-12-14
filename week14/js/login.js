@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
         if(password.value == newArray[0].password){
             message.textContent = "SUCESS!";
             localStorage.setItem("user_id",JSON.stringify(newArray[0].id));
-            window.location.href = `https://marcosbarrozo.github.io/wdd330/week8/views/dashboard.html`
+            window.location.href = `https://marcosbarrozo.github.io/wdd330/week14/views/dashboard.html`
         } else{
             message.textContent = "Incorrect password, try again!";
         }

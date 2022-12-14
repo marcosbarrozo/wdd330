@@ -27,19 +27,19 @@ form.addEventListener("submit", (event) => {
 
   logOut.addEventListener("click",()=>{
     window.localStorage.removeItem('user_id');
-    window.location.href = "https://marcosbarrozo.github.io/wdd330/week8/index.html";
+    window.location.href = "https://marcosbarrozo.github.io/wdd330/week14/index.html";
   })
 
   document.querySelector("#blog_btn").addEventListener("click", ()=>{
-    window.location.href = "https://marcosbarrozo.github.io/wdd330/week8/views/blog.html";
+    window.location.href = "https://marcosbarrozo.github.io/wdd330/week14/views/blog.html";
   })
 
 } else{
     const section = document.querySelector("#dashboard").innerHTML = `
     <h1>No user logged in, please Login or Create Your Account!</h1>
     <div class="buttons">
-    <a href="https://marcosbarrozo.github.io/wdd330/week8/index.html" class="btn" >Login</a>
-    <a href="https://marcosbarrozo.github.io/wdd330/week8/views/sign_up.html" class="btn" >Sign up</a>
+    <a href="https://marcosbarrozo.github.io/wdd330/week14/index.html" class="btn" >Login</a>
+    <a href="https://marcosbarrozo.github.io/wdd330/week14/views/sign_up.html" class="btn" >Sign up</a>
     </div>
 
     `

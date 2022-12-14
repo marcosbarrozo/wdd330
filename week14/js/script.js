@@ -39,7 +39,7 @@ form.addEventListener("submit", (event) => {
   }
   user.createUser(name_.value,email_.value,password.value);
   emailError.textContent = "User Created!"
-  window.location.href = "https://marcosbarrozo.github.io/wdd330/week8/index.html";
+  window.location.href = "https://marcosbarrozo.github.io/wdd330/week14/index.html";
   event.preventDefault();
 
 });

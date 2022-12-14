@@ -29,7 +29,7 @@ if(JSON.parse(localStorage.getItem("user_id"))){
     const blogTitle = document.querySelector("#blog_title");
     blogTitle.innerText = "No user logged in, please Login or Create Your Account!"
     const link = document.querySelector("#link");
-    link.href = "https://marcosbarrozo.github.io/wdd330/week8/index.html";
+    link.href = "https://marcosbarrozo.github.io/wdd330/week14/index.html";
     link.textContent = "Login";
 }
 
